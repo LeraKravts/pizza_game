@@ -10,7 +10,6 @@ class Margarita(BasePizza):
     def __str__(self):
         ingredients = (elem for elem in dir(Margarita) if elem[0] != '_')
         print('Margarira \N{tomato}', end=' ')
-        # print(self)
         for elem in ingredients:
             print(elem, end=' ')
         print('\N{black heart}')
